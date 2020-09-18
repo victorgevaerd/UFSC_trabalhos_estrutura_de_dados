@@ -1,0 +1,51 @@
+from buffer import Buffer
+from stack import Stack
+
+
+fila = Buffer(5)
+pilha = Stack(5)
+
+# Interagindo com a fila
+fila.enqueue('one')
+print(fila.head(), fila.tail())
+fila.enqueue('two')
+print(fila.head(), fila.tail())
+fila.enqueue('three')
+print(fila.head(), fila.tail())
+fila.enqueue('four')
+print(fila.head(), fila.tail())
+fila.enqueue('five')
+print(fila.head(), fila.tail())
+fila.dequeue()
+print(fila.head(), fila.tail())
+fila.dequeue()
+print(fila.head(), fila.tail())
+fila.dequeue()
+print(fila.head(), fila.tail())
+fila.dequeue()
+print(fila.head(), fila.tail())
+fila.dequeue()
+fila.enqueue('one')
+print(fila.head(), fila.tail())
+fila.enqueue('two')
+print(fila.head(), fila.tail())
+fila.enqueue('three')
+print(fila.head(), fila.tail())
+fila.enqueue('four')
+print(fila.head(), fila.tail())
+fila.enqueue('five')
+print(fila.head(), fila.tail())
+fila.dequeue()
+print(fila.head(), fila.tail())
+fila.dequeue()
+
+
+# Interagindo com a pilha
+pilha.push('one')
+print(pilha.top())
+pilha.push('two')
+print(pilha.top())
+pilha.push('three')
+print(pilha.top())
+pilha.pop()
+print(pilha.top())
